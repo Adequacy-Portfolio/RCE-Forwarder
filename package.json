@@ -1,0 +1,22 @@
+{
+  "name": "RCE-Forwarder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pnpm run build && node dist/index.js",
+    "build": "rimraf ./dist && tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rce.js": "github:b1nzeex/rce.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.1.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.5.4"
+  }
+}
